@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launchlight · Static Starter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">
+      <div class="mark">LL</div>
+      <div class="word">
+        <span class="word-top">Launchlight</span>
+        <span class="word-bottom">Static starter</span>
+      </div>
+    </div>
+    <a class="ghost" href="#deploy">Deploy guide</a>
+  </header>
+
+  <main class="page">
+    <section class="hero" id="top">
+      <div class="hero-left">
+        <p class="eyebrow">Static site, zero dependencies</p>
+        <h1>Launch a sharp one-page site that is GitHub Pages ready.</h1>
+        <p class="lede">
+          Drop these files onto a branch and publish. Palette controls and a quick idea generator
+          help you tune the vibe before you ship.
+        </p>
+        <div class="hero-actions">
+          <a class="cta" href="#deploy">See deploy steps</a>
+          <button class="ghost" id="palette-toggle" type="button">Shuffle palette</button>
+        </div>
+        <div class="hero-pill">
+          <div class="dot"></div>
+          <div>
+            <p class="pill-top">Ships in seconds</p>
+            <p class="pill-bottom" id="palette-name">Aurora Mint</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="card live-card">
+          <div class="card-head">
+            <p>Preview panel</p>
+            <span class="chip">Live</span>
+          </div>
+          <div class="timeline">
+            <div class="step">
+              <div class="step-icon">1</div>
+              <div>
+                <p class="step-title">Edit copy</p>
+                <p class="step-sub">Tweak the text to match your idea.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">2</div>
+              <div>
+                <p class="step-title">Push to main</p>
+                <p class="step-sub">No build tools needed.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">3</div>
+              <div>
+                <p class="step-title">Enable Pages</p>
+                <p class="step-sub">Point to main and publish.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-foot">
+            <p>Tip: color changes are instant.</p>
+            <button class="cta secondary" id="spark-button" type="button">New spark</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-block">
+      <article class="card feature">
+        <div class="feature-icon">A</div>
+        <h3>Pages ready</h3>
+        <p>Only static assets. Works from the root of your repository without a build step.</p>
+      </article>
+      <article class="card feature">
+        <div class="feature-icon">R</div>
+        <h3>Responsive</h3>
+        <p>Fluid layout with generous spacing that holds up on laptops, tablets, and phones.</p>
+      </article>
+      <article class="card feature">
+        <div class="feature-icon">I</div>
+        <h3>Interactive</h3>
+        <p>Palette shuffler and idea sparks run in plain JavaScript. No dependencies to install.</p>
+      </article>
+    </section>
+
+    <section class="idea" id="ideas">
+      <div>
+        <p class="eyebrow">Idea sparks</p>
+        <h2>Need a hook? Tap the button.</h2>
+        <p class="lede">Use these prompts to shape the page into a landing for your project.</p>
+        <div class="idea-output" id="spark-output">
+          Turn your README into a visual story by pulling out one hero stat and one customer quote.
+        </div>
+        <div class="idea-actions">
+          <button class="cta" id="spark-button-secondary" type="button">Give me another</button>
+          <a class="ghost" href="#deploy">Jump to deploy</a>
+        </div>
+      </div>
+      <div class="idea-card">
+        <div class="chip">Checklist</div>
+        <ul>
+          <li>Swap the hero headline to your product name.</li>
+          <li>Add one metric inside the preview panel.</li>
+          <li>Link the primary button to your signup or docs.</li>
+          <li>Push to the main branch and publish.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="deploy" id="deploy">
+      <div>
+        <p class="eyebrow">Launch guide</p>
+        <h2>Deploy to GitHub Pages</h2>
+        <p class="lede">From zero to live URL in minutes.</p>
+      </div>
+      <div class="deploy-steps">
+        <div class="step-card">
+          <p class="step-number">1</p>
+          <div>
+            <p class="step-title">Commit to main</p>
+            <p class="step-sub">Keep index.html at the root so Pages can serve it.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <p class="step-number">2</p>
+          <div>
+            <p class="step-title">Settings → Pages</p>
+            <p class="step-sub">Source: Deploy from a branch. Branch: main. Folder: root.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <p class="step-number">3</p>
+          <div>
+            <p class="step-title">Publish</p>
+            <p class="step-sub">Save. In about a minute the site appears at https://&lt;user&gt;.github.io/&lt;repo&gt;.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with plain HTML, CSS, and JavaScript. Ready for GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
